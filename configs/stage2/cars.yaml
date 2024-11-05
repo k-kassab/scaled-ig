@@ -1,0 +1,18 @@
+# ---meta---
+pretrain_exp_name: pre_exploit_cars_500_500-1000
+exp_name: exploit_cars_500_500-1000
+pretrain: true
+train: true
+# ----------
+
+# load gvae checkpoint
+load_args:
+  gvae_exp_name: train_cars_500
+  gvae_savedir: outputs
+  load_global_planes: false
+
+dataset:
+  name: shapenet/cars
+  subset: square128_above
+  scene_repartition: 
+    car: [500, 1000]

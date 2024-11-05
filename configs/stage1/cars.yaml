@@ -1,0 +1,12 @@
+# ---meta---
+pretrain_exp_name: pre_train_cars_500
+exp_name: train_cars_500
+pretrain: true
+train: true
+# ----------
+
+dataset:
+  name: shapenet/cars
+  subset: square128_above
+  scene_repartition: 
+    car: [0, 500]

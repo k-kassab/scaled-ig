@@ -1,0 +1,12 @@
+# ---meta---
+pretrain_exp_name: pre_train_faces_500
+exp_name: train_faces_500
+pretrain: true
+train: true
+# ----------
+
+dataset:
+  name: basel_faces
+  subset: square128
+  scene_repartition: 
+    face: [0, 500]

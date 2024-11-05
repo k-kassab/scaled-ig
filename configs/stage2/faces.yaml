@@ -1,0 +1,19 @@
+# ---meta---
+pretrain_exp_name: pre_exploit_faces_500_500-1000
+exp_name: exploit_faces_500_500-1000
+pretrain: true
+train: true
+# ----------
+
+# load gvae checkpoint
+load_args:
+  gvae_exp_name: train_faces_500
+  gvae_savedir: outputs
+  load_global_planes: false
+
+
+dataset:
+  name: basel_faces
+  subset: square128
+  scene_repartition: 
+    face: [500, 1000]
