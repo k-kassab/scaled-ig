@@ -67,9 +67,14 @@ We visualize and evaluate our method using [wandb](https://wandb.ai/site).
 You can get quickstarted [here](https://docs.wandb.ai/quickstart).
 
 ## Notice 
-The code for this work utilizes the code from our paper [Bringing NeRFs to the Latent Space:
-Inverse Graphics Autoencoder](https://ig-ae.github.io) which implements functionalities for both projects.
+This work is closely related to our paper [Bringing NeRFs to the Latent Space:
+Inverse Graphics Autoencoder](https://ig-ae.github.io), whose [implementation](https://github.com/k-kassab/igae) encompasses functionalities for both projects.
 Feel free to explore our other work if it piques your interest.
+
+## A Note on License
+This code is open-source. We share most of it under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+However, parts of the code in [igae](igae) are distributed under a more restrictive license.
+Refer to the igae [README](igae/README.md) for more details.
 
 ## Citation
 
